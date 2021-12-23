@@ -9,14 +9,14 @@
 
 \title{Trade-offs between sustainable development goals in systems of cities}
 
-%\author{}
-\author[label1]{Juste Raimbault\corref{cor1}}
-\author[label2]{Denise Pumain}
+\author{}
+%\author[label1]{Juste Raimbault\corref{cor1}}
+%\author[label2]{Denise Pumain}
 
-\address[label1]{CASA, University College London}
-\address[label2]{G{\'e}ographie-cit{\'e}s, Universit{\'e} Paris 1}
+%\address[label1]{CASA, University College London}
+%\address[label2]{G{\'e}ographie-cit{\'e}s, Universit{\'e} Paris 1}
 
-\cortext[cor1]{Corresponding author: juste.raimbault@polytechnique.edu}
+%\cortext[cor1]{Corresponding author: juste.raimbault@polytechnique.edu}
 
 
 
@@ -132,7 +132,7 @@ Note that in this abstract model and with the proxy used, ``emissions'' captures
 
 \subsection{Implementation}
 
-The model is implemented in \texttt{scala} for performances purposes, using matrix operations to update innovation shares and populations. Source code and simulation results are available on the open git repository of the project at \url{https://github.com/JusteRaimbault/UrbanEvolution}.
+The model is implemented in \texttt{scala} for performances purposes, using matrix operations to update innovation shares and populations. Source code and simulation results are available on the open git repository of the project at \url{https://github.com/AnonymousAuthor1/SDGTradeoffs}.
 
 Model optimisation is achieved by integrating the model into the OpenMOLE platform \cite{reuillon2013openmole}. This free and open source software facilitates model embedding into a workflow system, distribution of computation into high-performance computing infrastructures, and provides a simple access to state-of-the-art model validation methods.
 
@@ -144,7 +144,7 @@ We investigate trade-offs between total innovation utility and emissions, by opt
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\linewidth]{figures/pareto-oppAverageUtility-averageGravityFlow_color-gravityDecay_size-innovationDecay_shape-utilityDistribution.png}
+	\includegraphics[width=\linewidth]{figures/Fig1.png}
 	\caption{Pareto front between the opposite of average utility (innovation) and mobility intensity index (emissions). Point color gives population spatial interaction range; point size innovation diffusion range; and point shape the utility distribution.\label{fig:fig1}}
 \end{figure*}
 
@@ -164,7 +164,7 @@ We show optimisation results, as the final algorithm population, in Fig.~\ref{fi
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\linewidth]{figures/pareto-oppAverageUtility-averageGravityFlow_VARYINGHIERARCHY_color-gravityDecay_size-innovationDecay.png}
+	\includegraphics[width=\linewidth]{figures/Fig2.png}
 	\caption{Pareto fronts, with initial population hierarchy index fixed at different values (point shape).\label{fig:fig2}}
 \end{figure*}
 
@@ -178,7 +178,7 @@ We show results in Fig.~\ref{fig:fig2}. We find that the higher the hierarchical
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=\linewidth]{figures/pareto-oppAverageUtility-averageGravityFlow_VARYINGINNOVHIERARCHY_color-gravityDecay_size-innovationDecay.png}
+	\includegraphics[width=\linewidth]{figures/Fig3.png}
 	\caption{Pareto fronts, with innovation hierarchy fixed at different values (point shape).\label{fig:fig3}}
 \end{figure*}
 

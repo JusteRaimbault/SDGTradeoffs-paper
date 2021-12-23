@@ -1,0 +1,10 @@
+
+mkdir figures
+
+cp figuresraw/pareto-oppAverageUtility-averageGravityFlow_color-gravityDecay_size-innovationDecay_shape-utilityDistribution.png figures/Fig1.png
+
+cp figuresraw/pareto-oppAverageUtility-averageGravityFlow_VARYINGHIERARCHY_color-gravityDecay_size-innovationDecay.png figures/Fig2.png
+
+cp figuresraw/pareto-oppAverageUtility-averageGravityFlow_VARYINGINNOVHIERARCHY_color-gravityDecay_size-innovationDecay.png figures/Fig3.png
+
+
