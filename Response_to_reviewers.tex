@@ -1,0 +1,197 @@
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\usepackage[document]{ragged2e}
+% pour justifier
+
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\rmdefault} 
+%\nopagenumbers{} 
+\usepackage[utf8]{inputenc} 
+\usepackage[scale=0.9]{geometry}
+
+
+\def \draft {1}
+\usepackage{xparse}
+\usepackage{ifthen}
+\DeclareDocumentCommand{\comment}{o m o o o o}
+{\ifthenelse{\draft=1}{
+  \IfValueT{#1}{
+      \textcolor{red}{\textbf{C (#1) : }#2}
+      \IfValueT{#3}{\textcolor{blue}{\textbf{A1 : }#3}}
+      \IfValueT{#4}{\textcolor{green}{\textbf{A2 : }#4}}
+      \IfValueT{#5}{\textcolor{red!50!blue}{\textbf{A3 : }#5}}
+      \IfValueT{#6}{\textcolor{blue}{\textbf{A4 : }#6}}
+    }
+    \IfNoValueT{#1}{
+      \textcolor{red}{\textbf{C : }#2}
+      \IfValueT{#3}{\textcolor{blue}{\textbf{A1 : }#3}}
+      \IfValueT{#4}{\textcolor{green}{\textbf{A2 : }#4}}
+      \IfValueT{#5}{\textcolor{red!50!blue}{\textbf{A3 : }#5}}
+      \IfValueT{#6}{\textcolor{blue}{\textbf{A4 : }#6}}
+    }
+ }{}
+}
+
+
+\firstname{}
+\lastname{}
+\begin{document}
+
+% recipient data
+\recipient{Editor Journal of Urban Management}{}
+\date{\today}
+\opening{Dear Editor,}
+\closing{Yours faithfully,\\
+Juste Raimbault and Denise Pumain\\
+LASTIG, IGN-ENSG and Universit{\'e} Paris 1
+}
+         % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+
+%\makelettertitle
+
+
+
+\justify
+
+
+%\textbf{Reply to the editor / Journal requirements}
+%\bigskip
+
+% You paper has been reviewed by two experts in the field. As you can see they raised critical issues about the current form of the manuscript. Especially, abstract, introduction and methods must be better linked and SDGs must be discussed adequately. Reviewer 1 points out to a few critical issues, regarding methods and interpretations. Please consider both reviewers' comments carefully when revising your paper.
+
+% missing some remarks by reviewer 2 ?
+
+\textbf{Reply to reviewers}
+
+
+\medskip
+
+
+\textbf{First referee:}
+
+\medskip
+
+% General comments:
+
+\begin{enumerate}
+%       
+    \item \textit{The introductory text and abstract is considerably different from the methods and results section, and it is unclear to me how the two parts have been merged. The introductory section is packed with (good) references to urban economics, regional science, etc., but is not really offering a problematization of urban hierarchies, climate innovation being discussed in the methods and results section - i.e. the links are missing.}
+    
+    \medskip
+
+    $\rightarrow$
+
+    \bigskip
+
+    \item \textit{The first section of the abstract makes little sense to me during the first reading, after reading the manuscript to the end - I grasp what the authors intend with competition, etc., but as a portal to the paper it is not working. The first sentence reads as follows: "Sustainable Development Goals are intrinsically competing, but their embedding into urban systems furthermore emphasises such compromises, due to spatial complexity, the non-optimal nature of such systems, and multi-objective aspects of their agents, among other reasons"}
+    
+    \medskip
+    
+    $\rightarrow$
+    
+    \bigskip
+
+    \item \textit{In addition, the introduction of and discussion about SDGs are inadequate and poorly linked to the text.}
+
+    \medskip
+    
+    $\rightarrow$
+    
+    \bigskip
+
+    \item \textit{The methods section is in many ways a black box with - alright 30 cities with a zipf law distribution, and a stepwise, 10-year interval progress horizon to tell the story of innovation spread, but why 30 cities, why rank-size distribution, etc., etc. the choices made are not discussed properly and the methodology is more or less of uncommented and left to references in works by others. I am NOT suggesting that the authors would benefit from going all formula in the methods section - but if there would have been a clear link between the introduction and the methods section, a motivation for the choices made would be stronger.}
+    
+    \medskip
+    
+    $\rightarrow$
+
+    \bigskip
+    
+%Specific comments:
+
+    \item \textit{The authors write:" We consider the "innovation" SDG (goal 9) and the "climate" 192 SDG (goal 14) as conflicting objectives. … Empirical evidence does not suggest globally a simultaneous reduction of emissions through innovation (Chen 198 and Lee, 2020)." Though I share the authors concern for environment and the role of innovation, there are several theories discussing the relationship between innovation and climate that are of opposing views. As the authors suggest - there may not be a support for a global simultaneous reduction of emissions (but why have the results both be global and simultaneous to be valid?), but examples where innovation is reducing emissions are well-known, and the scientific debate (though being highly criticized) about the environmental Kuznets curve is juxtaposing your view of the relationship between innovation and emissions. Examples of the later is that innovations have reduced emissions in vehicles (private transport in particular) but at the same time - the emission variable you are using as a constant (well as a function of distance and population growth) in your model - assumes that there is no innovation in transport. Under this assumption the results make sense but what is the purpose with that kind of a find?}
+    
+    \medskip
+    
+    $\rightarrow$
+    
+    \bigskip
+    
+    \item \textit{The results and discussions are interesting but I am not fully comprehending what is being said and what the findings mean - what does for instance inequal hierarchies mean - and how do they differ from the unequal ditto (you mention both), and what do the results ay if they are being translated to a regional scientific framework? Well you do discuss this to some extent - but the full story is missing.}
+    
+    \medskip
+    
+    $\rightarrow$
+
+    \bigskip
+    
+    \item \textit{Figure 3 is in the middle of the references}
+
+\end{enumerate}
+%God luck! 
+
+
+\vspace{2cm}
+
+
+
+
+\textbf{Second referee:}
+
+%Comments:
+
+%1. Summary
+%Sustainable development issue is an important and persistent topic for countries as well as cities globally. Each city in the world would try to pursue sustainable development goals in almost all fields. However, intrinsically these goals are competing because of spatial complexity, agents' multi-objective aspects and urban system's non-optimal nature. None city could achieve all sustainable development goals at the same time. So how to trade off these goals is a key problem for the governance of a city as well as urban systems. This paper employs a stylized simulation model to emulate the activities of systems of cities where innovation diffusion and population dynamics are focused on. The simulation results show that there exists no single urban optimum but possible for trade-offs between objectives. This is an interesting topic to study as each city or urban system face with such issues. The paper's conclusions have reasonable policy implications for a city or urban system when decision-making in pursuing multi-objective sustainable development.
+%The manuscript has rather clear and specific objectives, and proper methodology is employed to analyze the related issues. The structure of the paper is organized in a rather rational way. The results reveal some natures for trade-offs between multi-objective sustainable development goals and consequently some conclusions are obtained. Figures used in the paper are able to illustrate the author(s)'s idea well.
+%The paper presents nevertheless some shortcomings need to be tackled. I will provide a more detailed account of the shortcomings and give suggestion for possible way outs.
+
+%2. Suggestions
+%There are 8 major flaws in the paper in my opinion:
+
+\medskip
+
+  
+
+\begin{itemize}
+    \item \textit{On literature review. Seen from the paper's organization structure, literature review is included in the Introduction. Its benefit is to save space and to be concise. But for more logical organization, another literature review had better to be added.}
+    
+    \medskip
+    
+    $\rightarrow$ 
+    
+    \bigskip
+    
+    \item \textit{On the model. In Section 2, for concise purpose, the model's mathematical description is omitted. But the mathematical description for the model is rather critical for understanding the idea of the paper as well as the specific model simulation followed. So, the mathematical description for the model should be given even in reduced way.}
+    
+    \medskip
+    
+    $\rightarrow$
+    
+    \bigskip
+    
+    \item \textit{On the simulation. Bi-objective simulation is implemented in the paper and optimization results are obtained, which illustrates the research aims well. I suggest a multi-objective model and simulation (practically, tri-objective model) implemented to confirm the trade-off result, after all a tri-objective model and simulation is closer to the real urban system than a bi-objective model.}
+    
+    \medskip
+    
+    $\rightarrow$
+    
+    \bigskip
+    
+    \item \textit{On the simulation data. If data available from a real urban system can be implemented for the simulation, the conclusion would be more powerful.}
+    
+    \medskip
+
+    $\rightarrow$    
+    
+\end{itemize}
+
+
+
+
+\end{document}
+
